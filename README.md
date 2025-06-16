@@ -50,7 +50,7 @@ Desain, pengkodean, dan ide datang dari imajinasi yang melayang tinggi di orbit 
 ## 📬 Kontak
 Ingin berkolaborasi atau sekadar menyapa dari planet lain?  
 📩 [Follow me on Instagram](https://www.instagram.com/fagih_channel/)  
-🌍 Or email me at: [your-email@example.com](ahmadfagih.arrifai@gmail.com)
+🌍 Or email me at: [personal email](ahmadfagih.arrifai@gmail.com)
 
 ---
 
