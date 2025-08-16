@@ -13,7 +13,7 @@ Website ini dirancang untuk menampilkan identitas digital dan seluruh pencapaian
 - Animasi floating dan glow untuk elemen penting
 - Tampilan 3 halaman utama:
   - 🧑‍🚀 **Perkenalan Diri**
-  - 🛠️ **Projek & MPK Komisi 3**
+  - 🛠️ **Kumpulan Projek**
   - 🏆 **Pencapaian (Achievments)**
 
 ---
