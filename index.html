@@ -45,161 +45,132 @@
                 <p id="desc" class="typing-text">A Passionate and Active Programmer</p>
             </div>
         </section>
-        <section id="about" class="AboutPage">
-            <div class="JsonCard">
-                <div class="header">
-                    <div className="template">
-                        <div className="circles">
-                            <svg height="40" width="30" xmlns="http://www.w3.org/2000/svg" className="xyz-in"
-                                xyz="fade down-1 delay-2">
-                                <circle r="15" cx="15" cy="20" fill="red" />
-                            </svg>
-                            <svg height="40" width="30" xmlns="http://www.w3.org/2000/svg" className="xyz-in"
-                                xyz="fade down-1 delay-4">
-                                <circle r="15" cx="15" cy="20" fill="yellow" />
-                            </svg>
-                            <svg height="40" width="30" xmlns="http://www.w3.org/2000/svg" className="xyz-in"
-                                xyz="fade down-1 delay-6">
-                                <circle r="15" cx="15" cy="20" fill="green" />
-                            </svg>
-                        </div>
+        <section id="about" class="AboutSection">
+
+            <div class="stars-container"></div>
+            <div class="shooting-stars-container"></div>
+
+            <div class="scrolly-track" data-scrolly style="--card-count: 3;">
+                <div class="scrolly-pin">
+                    <div class="scrolly-stage">
+
+                        <!-- Card 1: About Me -->
+                        <article class="scrolly-card" data-card-index="0">
+                            <div class="scrolly-card-content">
+                                <div class="scrolly-card-header">
+                                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                                </div>
+                                <div class="scrolly-card-body about-content">
+                                    <div class="about-left">
+                                        <div class="about-photo-frame">
+                                            <div class="about-photo-glow"></div>
+                                            <img src="./Images/gweh.jpg" alt="Ahmad Faqih Arrifa'i">
+                                        </div>
+                                    </div>
+                                    <div class="about-right">
+                                        <h2 class="section-label">About Me</h2>
+                                        <p class="about-desc">Hello Everyone! my name is Ahmad Faqih Arrifa'i, I'm a
+                                            <span id="nowYear">16</span>-year-old student from Indonesia with a strong passion for technology and
+                                            programming. I specialize in backend web development and have
+                                            experience with frontend technologies. When I'm bored, I enjoy contributing
+                                            to open-source projects.</p>
+                                        <div class="about-meta">
+                                            <div class="meta-item">
+                                                <i class="fas fa-cake-candles"></i>
+                                                <div class="meta-text">
+                                                    <span class="meta-label">Birthdate</span>
+                                                    <span class="meta-value">5 December 2008</span>
+                                                </div>
+                                            </div>
+                                            <div class="meta-item">
+                                                <i class="fas fa-location-dot"></i>
+                                                <div class="meta-text">
+                                                    <span class="meta-label">Location</span>
+                                                    <span class="meta-value">Indonesia</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 2: Tech Stack -->
+                        <article class="scrolly-card" data-card-index="1">
+                            <div class="scrolly-card-content">
+                                <div class="scrolly-card-header">
+                                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                                </div>
+                                <div class="scrolly-card-body tech-content">
+                                    <div class="tech-header">
+                                        <i class="fas fa-code"></i>
+                                        <h2 class="section-label">Tech Stack</h2>
+                                    </div>
+                                    <div class="tech-grid">
+                                    <div class="tech-item"><i class="fab fa-html5"></i><span>HTML</span></div>
+                                    <div class="tech-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                                    <div class="tech-item"><i class="fab fa-js"></i><span>JS</span></div>
+                                    <div class="tech-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                                    <div class="tech-item"><i class="fab fa-laravel"></i><span>Laravel</span></div>
+                                    <div class="tech-item"><i class="fab fa-react"></i><span>React</span></div>
+                                    <div class="tech-item"><i class="fab fa-php"></i><span>PHP</span></div>
+                                    <div class="tech-item"><i class="fab fa-tailwind"></i><span>Tailwind</span></div>
+                                    <div class="tech-item"><i class="fas fa-database"></i><span>MySQL</span></div>
+                                </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Card 3: Education -->
+                        <article class="scrolly-card" data-card-index="2">
+                            <div class="scrolly-card-content">
+                                <div class="scrolly-card-header">
+                                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                                </div>
+                                <div class="scrolly-card-body edu-content">
+                                    <div class="edu-header">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <h2 class="section-label">Education Journey</h2>
+                                    </div>
+                                    <div class="edu-timeline">
+                                        <div class="edu-item">
+                                            <div class="edu-dot"></div>
+                                            <div class="edu-info">
+                                                <span class="edu-date">2024 - Present</span>
+                                                <h3>Senior High School</h3>
+                                                <p>SMKN 10 Jakarta</p>
+                                            </div>
+                                        </div>
+                                        <div class="edu-item">
+                                            <div class="edu-dot"></div>
+                                            <div class="edu-info">
+                                                <span class="edu-date">2020 - 2024</span>
+                                                <h3>Junior High School</h3>
+                                                <p>MTsN 6 Jakarta</p>
+                                            </div>
+                                        </div>
+                                        <div class="edu-item">
+                                            <div class="edu-dot"></div>
+                                            <div class="edu-info">
+                                                <span class="edu-date">2014 - 2020</span>
+                                                <h3>Elementary School</h3>
+                                                <p>SDIT Nurul Yaqin</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
                     </div>
+
+                    <nav class="scrolly-progress" data-scrolly-progress>
+                        <button class="scrolly-progress-dot" data-goto="0" aria-label="Go to About Me"></button>
+                        <button class="scrolly-progress-dot" data-goto="1" aria-label="Go to Tech Stack"></button>
+                        <button class="scrolly-progress-dot" data-goto="2" aria-label="Go to Education"></button>
+                    </nav>
                 </div>
-                <div class="body">
-                    <div class="description">
-                        <div class="card">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <img src="./Images/gweh.jpg" alt="">
-                                </div>
-                                <div class="card-back">
-                                    <div class="descTop">
-                                        <h2>About Me</h2>
-                                        <p> Hello Everyone! my name is Ahmad Faqih Arrifa'i, I'm a 16-year-old student
-                                            from Indonesia with a strong passion for technology and
-                                            programming. I
-                                            specialize in frontend web development but also have experience with backend
-                                            technologies.
-                                            When
-                                            I'm
-                                            bored, I enjoy contributing to open-source
-                                            projects,
-                                            and
-                                            playing basketball.</p>
-                                    </div>
-                                    <div class="descBottom">
-                                        <div class="birth">
-                                            <h2>Birthdate</h2>
-                                            <ul>
-                                                <li>5 December 2008</li>
-                                            </ul>
-                                        </div>
-                                        <div class="Location">
-                                            <h2>Location</h2>
-                                            <ul>
-                                                <li>Indonesia</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="detailWrapper">
-                        <div class="skills">
-                            <h2>Tech Stack</h2>
-                            <div class="skills-scroll-container">
-                                <div class="skills-row">
-                                    <div class="tech-item">
-                                        <i class="fab fa-html5"></i>
-                                        <span>HTML5</span>
-                                    </div>
-                                    <div class="tech-item">
-                                        <i class="fab fa-css3-alt"></i>
-                                        <span>CSS3</span>
-                                    </div>
-                                    <div class="tech-item">
-                                        <i class="fab fa-js"></i>
-                                        <span>JavaScript</span>
-                                    </div>
-                                    <div class="tech-item">
-                                        <i class="fab fa-php"></i>
-                                        <span>Php</span>
-                                    </div>
-                                    <div class="tech-item">
-                                        <i class="fab fa-react"></i>
-                                        <span>React</span>
-                                    </div>
-                                    <div class="tech-item">
-                                        <i class="fab fa-laravel"></i>
-                                        <span>Laravel</span>
-                                    </div>
-                                    <div class="tech-item">
-                                        <i class="fab fa-vuejs"></i>
-                                        <span>VueJs</span>
-                                    </div>
-                                    <div class="tech-item">
-                                        <i class="fab fa-github"></i>
-                                        <span>GitHub</span>
-                                    </div>
-                                    <div class="tech-item">
-                                        <i class="fab fa-bootstrap"></i>
-                                        <span>Bootstrap</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="education-timeline">
-                            <h2>Education Journey</h2>
-                            <div class="timeline-container">
-                                <!-- Timeline Item 1 -->
-                                <div class="timeline-item">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-date">2024 - Present</div>
-                                    <div class="timeline-content">
-                                        <h3>Senior High School</h3>
-                                        <p>SMKN 10 Jakarta</p>
-                                        <div class="timeline-badge">
-                                            <i class="fas fa-graduation-cap"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Timeline Item 2 -->
-                                <div class="timeline-item">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-date">2020 - 2024</div>
-                                    <div class="timeline-content">
-                                        <h3>Junior High School</h3>
-                                        <p>MTsN 6 Jakarta</p>
-                                        <div class="timeline-badge">
-                                            <i class="fas fa-laptop-code"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Timeline Item 3 -->
-                                <div class="timeline-item">
-                                    <div class="timeline-dot"></div>
-                                    <div class="timeline-date">2014 - 2020</div>
-                                    <div class="timeline-content">
-                                        <h3>Elementary School</h3>
-                                        <p>SDIT Nurul Yaqin</p>
-                                        <div class="timeline-badge">
-                                            <i class="fas fa-child"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
-
         </section>
         <section id="mpk" class="MpkPage">
             <div class="parallax-container">
@@ -434,7 +405,8 @@
                         <i class="fab fa-instagram"></i>
                         <span>Instagram</span>
                     </a>
-                    <a href="https://wa.me/6287731366777?text=Hello!, i'm interested with your Portfolio!" class="social-icon whatsapp">
+                    <a href="https://wa.me/6287731366777?text=Hello!, i'm interested with your Portfolio!"
+                        class="social-icon whatsapp">
                         <i class="fab fa-whatsapp"></i>
                         <span>WhatsApp</span>
                     </a>
@@ -457,209 +429,7 @@
         </div>
 
     </div>
-    <script>
-        let bg = document.getElementById("bg")
-        let moon = document.getElementById("moon-planet")
-        let earth = document.getElementById("earth-planet")
-        let text = document.getElementById("text")
-        let desc = document.getElementById("desc")
-        let satelite = document.getElementById("satelite")
-        let meteor = document.getElementById("meteor");
-        let asteroid = document.getElementById("asteroid");
-        let bgMpk = document.getElementById("bgMpk");
-
-        window.addEventListener('scroll', function () {
-            var value = window.scrollY;
-
-            bg.style.top = value * 0.5 + 'px'
-            moon.style.top = -value * 0.5 + 'px'
-            satelite.style.top = -value * 0.5 + 'px'
-            earth.style.top = value * 0.30 + 'px'
-            text.style.top = value * 1 + 'px'
-            desc.style.top = value * 1 + 'px'
-        })
-
-        window.onload = function () {
-            // Scroll ke atas saat halaman dimuat
-            window.scrollTo(0, 0);
-
-            // Pastikan tidak ada hash di URL yang menyebabkan scroll
-            if (window.location.hash) {
-                history.replaceState(null, null, ' ');
-            }
-        };
-
-        const gatau = document.querySelector('.Gatau');
-        const light = document.querySelector('.mouse-light');
-
-        gatau.addEventListener('mousemove', function (e) {
-            const rect = gatau.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            light.style.left = `${x}px`;
-            light.style.top = `${y}px`;
-            light.style.opacity = 1;
-        });
-
-        gatau.addEventListener('mouseleave', function () {
-            light.style.opacity = 0;
-        });
-
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.querySelector('.right');
-
-        // Toggle saat hamburger diklik
-        hamburger.addEventListener('click', (e) => {
-            e.stopPropagation(); // Cegah bubbling ke document
-            navLinks.classList.toggle('show');
-        });
-
-        // Tutup dropdown saat klik link navigasi
-        const links = document.querySelectorAll('.right a');
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('show');
-            });
-        });
-
-        // Tutup dropdown saat klik di luar nav
-        document.addEventListener('click', (event) => {
-            if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
-                navLinks.classList.remove('show');
-            }
-        });
-
-        // Update the achievement cards interaction for mobile
-        const achievementCards = document.querySelectorAll('.achievement-card');
-
-        achievementCards.forEach(card => {
-            // For mouse devices
-            card.addEventListener('mousemove', (e) => {
-                if (window.innerWidth > 768) { // Only apply on desktop
-                    const rect = card.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
-
-                    const centerX = rect.width / 2;
-                    const centerY = rect.height / 2;
-
-                    const angleX = (y - centerY) / 20;
-                    const angleY = (centerX - x) / 20;
-
-                    card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.05)`;
-
-                    const glowX = (x / rect.width) * 100;
-                    const glowY = (y / rect.height) * 100;
-                    card.style.setProperty('--glow-x', `${glowX}%`);
-                    card.style.setProperty('--glow-y', `${glowY}%`);
-                }
-            });
-
-            // For touch devices
-            card.addEventListener('touchmove', (e) => {
-                if (window.innerWidth <= 768) { // Only apply on mobile
-                    const touch = e.touches[0];
-                    const rect = card.getBoundingClientRect();
-                    const x = touch.clientX - rect.left;
-                    const y = touch.clientY - rect.top;
-
-                    const glowX = (x / rect.width) * 100;
-                    const glowY = (y / rect.height) * 100;
-                    card.style.setProperty('--glow-x', `${glowX}%`);
-                    card.style.setProperty('--glow-y', `${glowY}%`);
-                }
-            });
-
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
-            });
-
-            card.addEventListener('touchend', () => {
-                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
-            });
-        });
-
-        const container = document.querySelector('.stars-container');
-        for (let i = 0; i < 100; i++) {
-            const star = document.createElement('div');
-            star.classList.add('twinkle');
-            star.style.top = Math.random() * 100 + '%';
-            star.style.left = Math.random() * 100 + '%';
-            star.style.animationDelay = Math.random() * 5 + 's';
-            container.appendChild(star);
-        }
-
-        const shootingContainer = document.querySelector('.shooting-stars-container');
-
-        for (let i = 0; i < 10; i++) {
-            const star = document.createElement('div');
-            star.classList.add('shooting-star');
-
-            // Random position
-            star.style.top = Math.random() * 100 + '%';
-            star.style.left = Math.random() * 100 + '%';
-
-            // Random delay & duration
-            const delay = Math.random() * 10 + 1; // 1s - 11s
-            const duration = Math.random() * 3 + 2; // 2s - 5s
-            star.style.animationDelay = `${delay}s`;
-            star.style.animationDuration = `${duration}s`;
-
-            shootingContainer.appendChild(star);
-        }
-
-        // Carousel functionality
-        const carouselContainer = document.querySelector('.carousel-container');
-        const projectCards = document.querySelectorAll('.project-card');
-        const prevBtn = document.querySelector('.prev-btn');
-        const nextBtn = document.querySelector('.next-btn');
-        let currentIndex = 0;
-
-        function updateCarousel() {
-            projectCards.forEach((card, index) => {
-                card.classList.remove('active', 'prev', 'next');
-
-                if (index === currentIndex) {
-                    card.classList.add('active');
-                } else if (index === currentIndex - 1 ||
-                    (currentIndex === 0 && index === projectCards.length - 1)) {
-                    card.classList.add('prev');
-                } else if (index === currentIndex + 1 ||
-                    (currentIndex === projectCards.length - 1 && index === 0)) {
-                    card.classList.add('next');
-                }
-            });
-
-
-        }
-
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % projectCards.length; // maju & loop
-            updateCarousel();
-        });
-
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + projectCards.length) % projectCards.length; // mundur & loop
-            updateCarousel();
-        });
-
-        // Initialize carousel
-        updateCarousel();
-
-        // Optional: Add keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') {
-                prevBtn.click();
-            } else if (e.key === 'ArrowRight') {
-                nextBtn.click();
-            }
-        });
-
-        setInterval(() => {
-            nextBtn.click();
-        }, 5000);
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
