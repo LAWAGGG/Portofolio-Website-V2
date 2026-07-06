@@ -175,157 +175,16 @@
         <section id="mpk" class="MpkPage">
             <div class="parallax-container">
                 <img src="./Images/bg.jpg" class="parallax-bg" alt="">
-                <img src="./Images/meteor-1.png" id="meteor" class="parallax-element floating" alt="">
-                <img src="./Images/asteroid-1.png" id="asteroid" class="parallax-element floating" alt="">
+                <img src="./Images/meteor-1.png" style="left: 2%; animation-delay: 1s;" id="meteor" class="parallax-element floating" alt="">
+                <img src="./Images/asteroid-1.png" id="asteroid" style="left: -1%; animation-delay: 2s;" class="parallax-element floating" alt="">
             </div>
 
             <div class="Gatau">
-                <div class="mouse-light"></div>
                 <div class="card-title">
                     <h1>My Projects!</h1>
                 </div>
                 <div class="content">
-                    <div class="project-carousel">
-                        <button class="carousel-btn prev-btn" aria-label="Previous project">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-
-                        <div class="carousel-container">
-                            <!-- Project 1 -->
-                            <div class="project-card active">
-                                <div class="project-image">
-                                    <img src="./Images/projects/SPES.png" alt="SPES Project">
-                                </div>
-                                <div class="project-details">
-                                    <div class="detail-text">
-                                        <h3>CommandSPES</h3>
-                                        <p>Class Website Portfolio</p>
-                                    </div>
-                                    <a href="https://github.com/LAWAGGG/CommandSPES-V2" class="project-link"
-                                        target="_blank">
-                                        <i class="fab fa-github"></i> View on GitHub
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Project 2 -->
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="./Images/projects/Home.png" alt="Home Project">
-                                </div>
-                                <div class="project-details">
-                                    <div class="detail-text">
-                                        <h3>HomeApp</h3>
-                                        <p>Basic Tools Website</p>
-                                    </div>
-                                    <a href="https://github.com/LAWAGGG/HomeApps" class="project-link" target="_blank">
-                                        <i class="fab fa-github"></i> View on GitHub
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- Project 3 -->
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="./Images/projects/Animal.png" alt="Animal Project">
-                                </div>
-                                <div class="project-details">
-                                    <div class="detail-text">
-                                        <h3>AnimalGram</h3>
-                                        <p>Social Media Website for animal Lover!</p>
-                                    </div>
-                                    <a href="https://github.com/LAWAGGG/AnimalGram" class="project-link"
-                                        target="_blank">
-                                        <i class="fab fa-github"></i> View on GitHub
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="./Images/projects/Recipe.png" alt="Recipe Project">
-                                </div>
-                                <div class="project-details">
-                                    <div class="detail-text">
-                                        <h3>RagdollWar</h3>
-                                        <p>Mini game made from c# and photon fusion</p>
-                                    </div>
-                                    <a href="https://github.com/LAWAGGG/RagdollWar" class="project-link"
-                                        target="_blank">
-                                        <i class="fab fa-github"></i>
-                                        <span>View on GitHub</span>
-                                    </a>
-
-                                </div>
-                            </div>
-
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="./Images/projects/Aspiration.png" alt="Aspiration Project">
-                                </div>
-                                <div class="project-details">
-                                    <div class="detail-text">
-                                        <h3>TenAspiration</h3>
-                                        <p>Place for students to giving their Aspiration</p>
-                                    </div>
-                                    <a href="https://github.com/LAWAGGG/TenAspiration" class="project-link"
-                                        target="_blank">
-                                        <i class="fab fa-github"></i>
-                                        <span>View on GitHub</span>
-                                    </a>
-
-                                </div>
-                            </div>
-
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="./Images/projects/Piano.png" alt="Piano Project">
-                                </div>
-                                <div class="project-details">
-                                    <div class="detail-text">
-                                        <h3>PianoJs</h3>
-                                        <p>Piano website for fun!</p>
-                                    </div>
-                                    <a href="https://github.com/LAWAGGG/Piano-JavaScript" class="project-link"
-                                        target="_blank">
-                                        <i class="fab fa-github"></i>
-                                        <span>View on GitHub</span>
-                                    </a>
-
-                                </div>
-                            </div>
-
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="./Images/projects/Breaker.png" alt="Breaker Project">
-                                </div>
-                                <div class="project-details">
-                                    <div class="detail-text">
-                                        <h3>BrickBreaker</h3>
-                                        <p>Game website brick breaker</p>
-                                    </div>
-                                    <a href="https://github.com/LAWAGGG/Brick-Breaker" class="project-link"
-                                        target="_blank">
-                                        <i class="fab fa-github"></i>
-                                        <span>View on GitHub</span>
-                                    </a>
-
-                                </div>
-                            </div>
-
-
-                            <div class="project-card github-card">
-                                <div class="project-links">
-                                    <h1>More projects on <a href="https://github.com/LAWAGGG"
-                                            target="_blank">GitHub!</a></h1>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="carousel-btn next-btn" aria-label="Next project">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
+                    <div class="projects-grid" id="projectsGrid"></div>
                 </div>
             </div>
         </section>

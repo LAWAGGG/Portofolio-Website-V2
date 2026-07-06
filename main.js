@@ -46,23 +46,6 @@ window.onload = function () {
     }
 };
 
-const gatau = document.querySelector('.Gatau');
-const light = document.querySelector('.mouse-light');
-
-gatau.addEventListener('mousemove', function (e) {
-    const rect = gatau.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    light.style.left = `${x}px`;
-    light.style.top = `${y}px`;
-    light.style.opacity = 1;
-});
-
-gatau.addEventListener('mouseleave', function () {
-    light.style.opacity = 0;
-});
-
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.right');
 
@@ -171,56 +154,105 @@ document.querySelectorAll('.shooting-stars-container').forEach(shootingContainer
 
 });
 
-// Carousel functionality
-const carouselContainer = document.querySelector('.carousel-container');
-const projectCards = document.querySelectorAll('.project-card');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
-let currentIndex = 0;
+// ─── Projects Data & Render ───
+const projectsData = [
+    {
+        title: "CommandSPES",
+        description: "Class Website Portfolio",
+        image: "./Images/projects/SPES.png",
+        link: "https://github.com/LAWAGGG/CommandSPES-V2"
+    },
+    {
+        title: "SkillPath",
+        description: "Education platform with gemini ai integration",
+        image: "./Images/projects/skillpath.png",
+        link: "https://github.com/LAWAGGG/SkillPath"
+    },
+    {
+        title: "FormKraft",
+        description: "Website form management",
+        image: "./Images/projects/formKraft.png",
+        link: "https://github.com/LAWAGGG/FormKraft"
+    },
+    {
+        title: "RagdollWar",
+        description: "Mini game made from c# and photon fusion",
+        image: "./Images/projects/Recipe.png",
+        link: "https://github.com/LAWAGGG/RagdollWar"
+    },
+    {
+        title: "TenAspiration",
+        description: "Place for students to giving their Aspiration",
+        image: "./Images/projects/Aspiration.png",
+        link: "https://github.com/LAWAGGG/TenAspiration"
+    },
+    {
+        title: "PlantVsZombie",
+        description: "Plant Vs Zombie game clone",
+        image: "./Images/projects/pvz.png",
+        link: "https://github.com/LAWAGGG/Plant-Vs-Zombie"
+    },
+    {
+        title: "Schopedia",
+        description: "Marketplace website for school",
+        image: "./Images/projects/schopedia.png",
+        link: "https://github.com/LAWAGGG/Schopedia"
+    },
+    {
+        title: "DanTen",
+        description: "marketplace webiste for Danusan OSIS",
+        image: "./Images/projects/danten.png",
+        link: "https://github.com/LAWAGGG/DanTen"
+    },
+    {
+        title: "RADAR Danusan",
+        description: "marketplace webiste for Danusan ROHIS",
+        image: "./Images/projects/radar.png",
+        link: "https://github.com/LAWAGGG/RADAR-Danusan"
+    },
+    {
+        title: "Sistem Informasi Jadwal",
+        description: "Schedule information system website for teacher",
+        image: "./Images/projects/sistemjadwal.png",
+        link: "https://github.com/LAWAGGG/sistem_informasi_jadwal"
+    },
+    {
+        title: "Checker",
+        description: "Checker game",
+        image: "./Images/projects/checker.png",
+        link: "https://github.com/LAWAGGG/Checker"
+    },
+];
 
-function updateCarousel() {
-    projectCards.forEach((card, index) => {
-        card.classList.remove('active', 'prev', 'next');
+function renderProjects() {
+    const grid = document.getElementById('projectsGrid');
+    if (!grid) return;
 
-        if (index === currentIndex) {
-            card.classList.add('active');
-        } else if (index === currentIndex - 1 ||
-            (currentIndex === 0 && index === projectCards.length - 1)) {
-            card.classList.add('prev');
-        } else if (index === currentIndex + 1 ||
-            (currentIndex === projectCards.length - 1 && index === 0)) {
-            card.classList.add('next');
-        }
-    });
-
-
+    grid.innerHTML = projectsData.map(project => `
+        <div class="project-card">
+            <div class="project-image">
+                <img src="${project.image}" alt="${project.title}">
+            </div>
+            <div class="project-details">
+                <div class="detail-text">
+                    <h3>${project.title}</h3>
+                    <p>${project.description}</p>
+                </div>
+                <a href="${project.link}" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    `).join('') + `
+        <div class="project-card github-card">
+            <div class="project-links">
+                <h1>More projects on <a href="https://github.com/LAWAGGG" target="_blank">GitHub!</a></h1>
+            </div>
+        </div>
+    `;
 }
 
-nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % projectCards.length; // maju & loop
-    updateCarousel();
-});
-
-prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + projectCards.length) % projectCards.length; // mundur & loop
-    updateCarousel();
-});
-
-// Initialize carousel
-updateCarousel();
-
-// Optional: Add keyboard navigation
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') {
-        prevBtn.click();
-    } else if (e.key === 'ArrowRight') {
-        nextBtn.click();
-    }
-});
-
-setInterval(() => {
-    nextBtn.click();
-}, 5000);
+renderProjects();
 
 // ─── Scrollytelling Engine ───
 (function initScrollytelling() {

@@ -366,8 +366,8 @@ body {
 }
 
 .scrolly-card-header .dot {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
 }
 
@@ -790,15 +790,16 @@ body {
     }
 }
 
+/* Ubah MpkPage height menjadi auto */
 .MpkPage {
     position: relative;
     width: 100%;
-    height: 100dvh;
+    min-height: 100dvh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: float 0.1s;
+    padding: 4rem 0;
 }
 
 .MpkPage img {
@@ -836,18 +837,20 @@ body {
     pointer-events: none;
 }
 
+/* Ubah Gatau menjadi container grid */
 .Gatau {
     color: white;
-    /* Pastikan warna teks kontras */
     padding: 2rem;
-    background: rgba(135, 135, 135, 0.426);
+    background: rgba(71, 89, 111, 0.43);
     border-radius: 1rem;
-    max-width: 800px;
+    max-width: 1200px;
+    width: 95%;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 2rem auto;
     backdrop-filter: blur(10px);
     position: relative;
     overflow: visible;
+    margin: 2rem auto;
+    z-index: 51;
 }
 
 .card-title h1 {
@@ -858,19 +861,13 @@ body {
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.content h3 {
-    color: #00f7ff;
+    display: block;
 }
 
 #meteor,
 #asteroid {
-    z-index: 50;
+    z-index: 52;
+    filter: blur(3px) brightness(0.6) sepia(1) hue-rotate(180deg) saturate(1.5);
 }
 
 .social {
@@ -1066,157 +1063,70 @@ body {
         0 0 80px rgba(255, 0, 255, 0.2);
 }
 
-.project-carousel {
-    position: relative;
-    width: 100dvw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+/* Grid layout untuk projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
 }
 
-.carousel-container {
-    flex: 1;
-    overflow: hidden;
-    position: relative;
-    height: 400px;
-}
-
-.project-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.project-card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+/* Project card di dalam grid */
+.projects-grid .project-card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    transition: all 0.5s ease;
-    mix-blend-mode: none;
-    opacity: 0;
-
-    transform: translateX(100%);
-}
-
-.project-card.active {
-    opacity: 1;
-    transform: translateX(0);
-    z-index: 10;
-}
-
-.project-card.prev {
-    transform: translateX(-100%);
-    opacity: 0;
-}
-
-.project-card.next {
-    transform: translateX(100%);
-    opacity: 0;
-}
-
-.carousel-btn {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
     transition: all 0.3s ease;
-    z-index: 20;
-    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.carousel-btn:hover {
-    background: rgba(0, 247, 255, 0.2);
-    border-color: #00f7ff;
-    transform: scale(1.1);
+.projects-grid .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: #90fbff;
 }
 
-.carousel-btn:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-}
-
-.carousel-btn i {
-    font-size: 1.2rem;
-}
-
-.project-image {
+.projects-grid .project-image {
     position: relative;
-    height: 70%;
-    z-index: 10000000000;
-    mix-blend-mode: none;
+    height: 200px;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
-.project-image img {
+.projects-grid .project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
 
-.project-card.active:hover .project-image img {
+.projects-grid .project-card:hover .project-image img {
     transform: scale(1.05);
 }
 
-.project-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    padding: 1.5rem;
-    color: white;
-}
-
-.project-details h3 {
-    font-size: 1.5rem;
-    color: #00f7ff;
-}
-
-.project-overlay p {
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-
-.project-details {
-    padding: 1.5rem;
-    height: 30%;
+.projects-grid .project-details {
+    padding: 1rem;
+    flex: 1;
     display: flex;
     justify-content: space-between;
     background: rgba(10, 42, 67, 0.7);
+    gap: 1rem;
 }
 
-.tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+.projects-grid .detail-text h3 {
+    font-size: 1.3rem;
 }
 
-.tech-tag {
-    background: rgba(0, 247, 255, 0.2);
-    color: #00f7ff;
-    padding: 0.3rem 0.8rem;
-    border-radius: 2rem;
-    font-size: 0.8rem;
-    border: 1px solid rgba(0, 247, 255, 0.3);
+.projects-grid .detail-text p {
+    font-size: 0.9rem;
+    color: rgba(171, 226, 255, 0.8);
 }
 
-.project-link {
+.projects-grid .project-link {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -1227,83 +1137,101 @@ body {
     border-radius: 0.5rem;
     transition: all 0.3s ease;
     align-self: flex-start;
+    font-size: 0.9rem;
 }
 
-.project-link:hover {
+.projects-grid .project-link:hover {
     background: rgba(0, 247, 255, 0.2);
     color: #00f7ff;
 }
 
+/* GitHub card di grid */
+.projects-grid .github-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px dashed rgba(0, 247, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.projects-grid .github-card .project-links {
+    text-align: center;
+    padding: 2rem;
+}
+
+.projects-grid .github-card h1 {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.projects-grid .github-card a {
+    color: #00f7ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.projects-grid .github-card a:hover {
+    text-shadow: 0 0 20px rgba(0, 247, 255, 0.5);
+}
+
+/* Hapus style carousel yang tidak terpakai */
+.project-carousel,
+.carousel-container,
+.carousel-btn {
+    display: none;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .carousel-container {
-        height: 350px;
-    }
-
-    .project-overlay h3 {
-        font-size: 1.3rem;
-    }
-
-    .project-links {
-        text-align: center;
-    }
-
-    .carousel-btn {
-        width: 35px;
-        height: 35px;
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
     }
 
     .Gatau {
-        max-width: 90dvw;
-        width: 100%;
-        margin: 1rem 0rem 1rem 0rem;
+        padding: 1rem;
+        margin: 1rem;
+        width: 98%;
     }
 
     .mouse-light {
         display: none;
     }
 
-    .project-links {
-        font-size: .8rem;
+    .projects-grid .project-image {
+        height: 180px;
     }
 
-    .project-link {
-        display: none;
+    .projects-grid .project-details {
+        padding: 1rem;
     }
 
-    .project-details {
-        justify-content: center;
-        align-items: center;
+    .projects-grid .detail-text h3 {
+        font-size: 1.1rem;
     }
 
-    .detail-text {
-        text-align: center;
+    .projects-grid .project-link {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .projects-grid .github-card {
+        min-height: 200px;
+    }
+
+    .projects-grid .github-card h1 {
+        font-size: 1.3rem;
     }
 }
 
 @media (max-width: 480px) {
-    .carousel-container {
-        height: 300px;
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
-    .project-overlay {
-        padding: 1rem;
-    }
-
-    .project-overlay h3 {
-        font-size: 1.1rem;
-    }
-
-    .project-overlay p {
-        font-size: 0.8rem;
-    }
-
-    .project-details {
-        padding: .5rem;
-    }
-
-    .tech-tag {
-        font-size: 0.7rem;
-        padding: 0.2rem 0.6rem;
+    .projects-grid .project-image {
+        height: 200px;
     }
 }
 
@@ -1342,11 +1270,6 @@ body {
 
     .text-container {
         line-height: 60px;
-    }
-
-    .Gatau {
-        padding: .5rem;
-        margin: 1rem;
     }
 
     .card-title h1 {
