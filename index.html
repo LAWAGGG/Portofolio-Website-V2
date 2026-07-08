@@ -5,7 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="yTXcEAZFd3lvnyqZaK1I4LnbU2-ulKHVbCizU_YZyv4" />
-    <title>AF Portfolio</title>
+    <meta name="description" content="Portfolio of Ahmad Faqih Arrifa'i — a passionate fullstack web developer from Indonesia. Explore projects, achievements, and tech stack." />
+    <meta name="keywords" content="Ahmad Faqih, portfolio, web developer, fullstack, Laravel, React, Indonesia" />
+    <meta name="author" content="Ahmad Faqih Arrifa'i" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ahmad Faqih — Portfolio" />
+    <meta property="og:description" content="Fullstack web developer from Indonesia. Explore my projects, achievements, and tech stack." />
+    <meta property="og:image" content="./Images/bg.jpg" />
+    <meta property="og:url" content="https://github.com/LAWAGGG" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ahmad Faqih — Portfolio" />
+    <meta name="twitter:description" content="Fullstack web developer from Indonesia. Explore my projects, achievements, and tech stack." />
+    <meta name="twitter:image" content="./Images/bg.jpg" />
+
+    <title>Ahmad Faqih — Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./Images/moon-icon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,18 +31,18 @@
 </head>
 
 <body>
-    <div class="ContentWrapper">
-        <div class="NavBar">
-            <div class="isi">
-                <div class="left">
-                    <div class="Logo">
+    <main class="ContentWrapper">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-brand">
+                    <div class="logo">
                         <h1>AF</h1>
                     </div>
                 </div>
-                <div class="right">
+                <div class="navbar-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#mpk">Projects</a>
+                    <a href="#projects">Projects</a>
                     <a href="#achievements">Achieve</a>
                 </div>
                 <div class="hamburger" id="hamburger">
@@ -34,15 +51,15 @@
                     <span></span>
                 </div>
             </div>
-        </div>
-        <section id="home" class="HomePage">
-            <img src="./Images/bg.jpg" id="bg" alt="">
+        </nav>
+        <section id="home" class="hero-section">
+            <img src="./Images/bg.jpg" id="home-bg" alt="">
             <img src="./Images/moon-planet.png" id="moon-planet" class="floating" alt="">
             <img src="./Images/earth-planet.png" id="earth-planet" alt="">
             <img src="./Images/satelite.png" id="satelite" class="floating" alt="">
             <div class="text-container">
-                <h2 id="text" class="animated-text">Ahmad Faqih!</h2>
-                <p id="desc" class="typing-text">A Passionate and Active Programmer</p>
+                <h2 id="hero-title" class="animated-text">Ahmad Faqih!</h2>
+                <p id="hero-desc" class="typing-text">A Passionate and Active Programmer</p>
             </div>
         </section>
         <section id="about" class="AboutSection">
@@ -71,8 +88,8 @@
                                         <h2 class="section-label">About Me</h2>
                                         <p class="about-desc">Hello Everyone! my name is Ahmad Faqih Arrifa'i, I'm a
                                             <span id="nowYear">16</span>-year-old student from Indonesia with a strong passion for technology and
-                                            programming. I specialize in backend web development and have
-                                            experience with frontend technologies. When I'm bored, I enjoy contributing
+                                            programming. I specialize in fullstack web development and have
+                                            experience with frontend and backend technologies. When I'm bored, I enjoy contributing
                                             to open-source projects.</p>
                                         <div class="about-meta">
                                             <div class="meta-item">
@@ -172,14 +189,14 @@
                 </div>
             </div>
         </section>
-        <section id="mpk" class="MpkPage">
+        <section id="projects" class="projects-section">
             <div class="parallax-container">
                 <img src="./Images/bg.jpg" class="parallax-bg" alt="">
                 <img src="./Images/meteor-1.png" style="left: 2%; animation-delay: 1s;" id="meteor" class="parallax-element floating" alt="">
                 <img src="./Images/asteroid-1.png" id="asteroid" style="left: -1%; animation-delay: 2s;" class="parallax-element floating" alt="">
             </div>
 
-            <div class="Gatau">
+            <div class="projects-content">
                 <div class="card-title">
                     <h1>My Projects!</h1>
                 </div>
@@ -195,61 +212,7 @@
             <div class="AchievementsContainer">
                 <h1 class="section-title">My Achievements</h1>
 
-                <div class="achievements-grid">
-                    <!-- Achievement 1 -->
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h3>2nd Place Robotics Competition</h3>
-                        <p class="achievement-level">Regional Level</p>
-                        <p class="achievement-year">2024</p>
-                        <div class="achievement-desc">
-                            <p>Won 2nd place in regional robotics competition with robot remoting and playing
-                                strategies.</p>
-                        </div>
-                    </div>
-
-                    <!-- Achievement 2 -->
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-medal"></i>
-                        </div>
-                        <h3>1st Place MHQ Competition</h3>
-                        <p class="achievement-level">Regional Level</p>
-                        <p class="achievement-year">2018</p>
-                        <div class="achievement-desc">
-                            <p>Champion in Musabaqah Hifzhil Qur'an (MHQ) at regional level with excellent memorization
-                                and recitation.</p>
-                        </div>
-                    </div>
-
-                    <!-- Achievement 3 -->
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <h3>1st Place MHQ Competition</h3>
-                        <p class="achievement-level">District Level</p>
-                        <p class="achievement-year">2018</p>
-                        <div class="achievement-desc">
-                            <p>First place winner in district level Qur'an memorization competition.</p>
-                        </div>
-                    </div>
-
-                    <!-- Achievement 4 -->
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h3>2nd Place MHQ Competition</h3>
-                        <p class="achievement-level">Jakarta City Level</p>
-                        <p class="achievement-year">2018</p>
-                        <div class="achievement-desc">
-                            <p>Achieved 2nd place in Jakarta city-wide Qur'an memorization competition.</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="achievements-grid"></div>
             </div>
         </section>
         <section class="social" id="social">
@@ -281,13 +244,13 @@
                 </div>
             </div>
         </section>
-        <div class="Footer">
-            <div class="FootContent">
-                <p>&copy; 2025 Ahmad Faqih Arrifa'i. All rights reserved.</p>
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; <span id="footer-year"></span> Ahmad Faqih Arrifa'i. All rights reserved.</p>
             </div>
-        </div>
+        </footer>
 
-    </div>
+    </main>
     <script src="main.js"></script>
 </body>
 
