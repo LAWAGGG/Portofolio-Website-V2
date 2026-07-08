@@ -1286,7 +1286,7 @@ body {
     }
 
     .projects-grid .project-details {
-        padding: 0.85rem;
+    padding: 0.85rem 0.85rem 3rem 0.85rem;
     }
 
     .projects-grid .detail-text h3 {
