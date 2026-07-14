@@ -151,7 +151,7 @@ const projectsData = [
     {
         title: "RagdollWar",
         description: "Mini game made from c# and photon fusion",
-        image: "./Images/projects/Recipe.png",
+        image: "./Images/projects/ragdoll.png",
         link: "https://github.com/LAWAGGG/RagdollWar",
         tech: ["C#"]
     },
@@ -203,11 +203,11 @@ const projectsData = [
         tech: ["HTML", "CSS", "JS"]
     },
     {
-        title: "Phytons",
-        description: "Snake pixel game multiplayer",
-        image: "./Images/projects/snake.png",
-        link: "https://github.com/LAWAGGG/Phytons",
-        demo: "https://lawaggg.github.io/Phytons/",
+        title: "Design Illustrator",
+        description: "cloning photoshop application in web",
+        image: "./Images/projects/design.png",
+        link: "https://github.com/LAWAGGG/Design-Illustrator",
+        demo: "https://lawaggg.github.io/Design-Illustrator/",
         tech: ["HTML", "CSS", "JS"]
     },
 ];
