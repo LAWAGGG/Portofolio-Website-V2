@@ -256,7 +256,7 @@ const achievementsData = [
     {
         rank: 1,
         title: "LKS Web Technology",
-        level: "National",
+        level: "National (Soon)",
         year: "2026",
         description: "Won 1st place in LKS Web Technology National"
     },
@@ -402,8 +402,30 @@ renderAchievements();
             const rect = track.getBoundingClientRect();
             const scrollableDistance = track.offsetHeight - window.innerHeight;
             const scrolled = Math.min(scrollableDistance, Math.max(0, -rect.top));
-            const targetT = scrollableDistance > 0 ? scrolled / scrollableDistance : 0;
+            const rawT = scrollableDistance > 0 ? scrolled / scrollableDistance : 0;
+
+            const zoneSize = 1 / n;
+            const transitionPortion = 0.3;
+            const plateauPortion = 1 - transitionPortion;
+            const currentZone = Math.min(Math.floor(rawT / zoneSize), n - 1);
+            const zoneProgress = (rawT - currentZone * zoneSize) / zoneSize;
+
+            let targetT;
+            if (currentZone >= n - 1) {
+                targetT = 1;
+            } else {
+                const cardT = currentZone / (n - 1);
+                const nextCardT = (currentZone + 1) / (n - 1);
+                if (zoneProgress < plateauPortion) {
+                    targetT = cardT;
+                } else {
+                    const transProgress = (zoneProgress - plateauPortion) / transitionPortion;
+                    targetT = cardT + (nextCardT - cardT) * transProgress;
+                }
+            }
+
             smoothT += (targetT - smoothT) * 0.15;
+            if (Math.abs(targetT - smoothT) < 0.0005) smoothT = targetT;
             const globalT = smoothT;
 
             let activeIndex = Math.round(globalT * (n - 1));

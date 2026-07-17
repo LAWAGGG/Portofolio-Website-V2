@@ -302,7 +302,7 @@ body {
 
 .scrolly-track {
     position: relative;
-    height: calc(var(--card-count) * 70vh);
+    height: calc(var(--card-count) * 100vh);
     z-index: 1;
 }
 
@@ -320,7 +320,7 @@ body {
 .scrolly-stage {
     position: relative;
     width: min(92%, 820px);
-    height: min(88vh, 600px);
+    height: min(88vh, 560px);
 }
 
 .scrolly-card {
@@ -397,7 +397,7 @@ body {
 }
 
 .section-label {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #00f7ff;
     margin-bottom: 1.25rem;
@@ -2093,5 +2093,78 @@ body {
 
     50% {
         opacity: 1;
+    }
+}
+
+/* === Mobile: 3 cards stacked, no headers === */
+@media (max-width: 768px) {
+
+    .scrolly-card .scrolly-card-header {
+        display: none;
+    }
+
+    .scrolly-card:first-child .scrolly-card-header {
+        display: flex;
+    }
+
+    .about-content {
+        gap: 1.25rem;
+    }
+
+    .about-photo-frame {
+        width: 140px;
+        height: 140px;
+    }
+
+    .about-desc {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .scrolly-card-body {
+        padding: 1.5rem;
+    }
+
+    .tech-grid {
+        gap: 0.7rem;
+    }
+
+    .tech-grid .tech-item {
+        padding: 0.85rem 0.4rem;
+    }
+
+    .tech-grid .tech-item i {
+        font-size: 1.5rem;
+    }
+
+    .tech-grid .tech-item span {
+        font-size: 0.72rem;
+    }
+
+    .edu-timeline {
+        padding-left: 1.5rem;
+    }
+
+    .edu-item {
+        padding: 0.6rem 0 0.6rem 1rem;
+    }
+
+    .edu-info {
+        padding: 0.8rem 1rem;
+    }
+
+    .edu-info h3 {
+        font-size: 0.95rem;
+    }
+
+    .edu-info p {
+        font-size: 0.8rem;
+    }
+
+    .edu-dot {
+        top: 2.9rem;
+        width: 11px;
+        height: 11px;
+        left: -1.7rem;
     }
 }
