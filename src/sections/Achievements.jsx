@@ -142,7 +142,7 @@ export default function Achievements() {
             <AnimatePresence>
                 {selected && origin && (
                     <motion.div
-                        className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center"
+                        className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-8"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -156,7 +156,7 @@ export default function Achievements() {
                             role="dialog"
                             aria-modal="true"
                             aria-label={selected.title}
-                            className="relative w-full sm:max-w-2xl bg-surface border-t sm:border border-border overflow-hidden rounded-t-xl sm:rounded-none"
+                            className="relative w-full max-w-xl bg-surface border border-border overflow-hidden rounded-xl"
                             initial={{
                                 x: origin.x,
                                 y: origin.y,
