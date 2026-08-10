@@ -1,0 +1,74 @@
+export const achievements = [
+    {
+        id: 1,
+        rank: 2,
+        title: 'LKS Web Technology',
+        level: 'National',
+        year: '2026',
+        category: 'Web Technology',
+        description: 'Competed against top vocational students across Indonesia.',
+        highlight: true,
+        // TODO: replace with actual certificate image file for each achievement
+        certificate: '/images/achievements/placeholder.svg',
+    },
+    {
+        id: 2,
+        rank: 1,
+        title: 'LKS Web Technology',
+        level: 'DKI Jakarta Province',
+        year: '2026',
+        category: 'Web Technology',
+        description: 'First place among all Jakarta vocational schools.',
+        highlight: true,
+        // TODO: replace with actual certificate image file
+        certificate: '/images/achievements/province.png',
+    },
+    {
+        id: 3,
+        rank: 1,
+        title: 'LKS Web Technology',
+        level: 'East Jakarta Region 2',
+        year: '2026',
+        category: 'Web Technology',
+        description: 'Regional qualifier winner, advancing to provincial stage.',
+        highlight: false,
+        // TODO: replace with actual certificate image file
+        certificate: '/images/achievements/district.png',
+    },
+    {
+        id: 4,
+        rank: 2,
+        title: 'Robotics Competition',
+        level: 'DKI Jakarta Province',
+        year: '2024',
+        category: 'Web Technology',
+        description: 'Provincial robotics competition with advanced programming strategies.',
+        highlight: false,
+        // TODO: replace with actual certificate image file
+        certificate: '/images/achievements/robotic.jpeg',
+    },
+    {
+        id: 5,
+        rank: 1,
+        title: 'MHQ — Quran Memorization',
+        level: 'Kecamatan Kramat Jati',
+        year: '2018',
+        category: 'Non-Tech',
+        description: 'First place in district-level Quran memorization competition.',
+        highlight: false,
+        // TODO: replace with actual certificate image file
+        certificate: '/images/achievements/placeholder.svg',
+    },
+    {
+        id: 6,
+        rank: 2,
+        title: 'MHQ — Quran Memorization',
+        level: 'DKI Jakarta Province',
+        year: '2018',
+        category: 'Non-Tech',
+        description: 'Represented district at city-wide competition.',
+        highlight: false,
+        // TODO: replace with actual certificate image file
+        certificate: '/images/achievements/placeholder.svg',
+    },
+]

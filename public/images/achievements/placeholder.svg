@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560">
+  <rect width="800" height="560" fill="#0d1117"/>
+  <rect x="24" y="24" width="752" height="512" fill="none" stroke="#21262d" stroke-width="2"/>
+  <rect x="40" y="40" width="720" height="480" fill="none" stroke="#e8501a" stroke-width="1" stroke-dasharray="6 6" opacity="0.5"/>
+  <rect x="56" y="56" width="688" height="448" fill="#161b22"/>
+  <text x="400" y="210" text-anchor="middle" font-family="'Clash Display','Space Grotesk',sans-serif" font-size="34" font-weight="700" fill="#e6edf3">Certificate</text>
+  <text x="400" y="258" text-anchor="middle" font-family="'Clash Display','Space Grotesk',sans-serif" font-size="18" fill="#8b949e">— place your achievement certificate here —</text>
+  <text x="400" y="300" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="12" letter-spacing="2" fill="#e8501a">PENDING ASSET</text>
+  <text x="400" y="470" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10" letter-spacing="1" fill="#3d4148">images/achievements/ &lt;certificate&gt;.svg</text>
+</svg>
