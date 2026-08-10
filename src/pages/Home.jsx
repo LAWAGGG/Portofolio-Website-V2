@@ -28,7 +28,7 @@ function AboutPreview() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                     <h2 className="fade-up font-display font-bold leading-tight tracking-tighter text-fg lg:col-span-7"
                         style={{ fontSize: 'clamp(1.8rem, 4.5vw, 3.5rem)' }}>
-                        17, fullstack developer & software engineering student from Jakarta.
+                        Fullstack developer & software engineering student from Jakarta.
                     </h2>
                     <div className="lg:col-span-5 space-y-6">
                         <p className="fade-up font-body text-dim leading-relaxed" style={{ maxWidth: '46ch' }}>

@@ -40,7 +40,8 @@ export const ContainerScroll = ({ titleComponent, children }) => {
     // Miring sepanjang perjalanan naik — sinkron sama cardY biar kelihatan
     const rotate = useTransform(scrollYProgress, [0, 0.6], [18, 0])
     const scale = useTransform(scrollYProgress, [0, 0.35], [0.92, 1])
-    const contentY = useTransform(scrollYProgress, [0.12, 1], [0, -travel])
+    // Isi card baru scroll setelah card settle di tengah (0.62+) — jangan kelewat duluan
+    const contentY = useTransform(scrollYProgress, [0.62, 1], [0, -travel])
     // Card naik dari bawah (di bawah fold) ke tengah — title kebaca dulu, barulah ketutup
     const cardY = useTransform(scrollYProgress, [0, 0.6], ['32vh', '0vh'])
 
