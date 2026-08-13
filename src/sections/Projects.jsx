@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Github, ArrowUpRight, X } from 'lucide-react'
 import { BackgroundPattern } from '../components/BackgroundPattern'
 import ProjectCard from '../components/ProjectCard'
+import { ZoomParallax } from '../components/ZoomParallax'
 import { projects } from '../data/projects'
 import { useMaskReveal } from '../hooks/useScrollReveal'
 import { useModal } from '../hooks/useModal'
@@ -19,12 +20,94 @@ export default function Projects() {
     useMaskReveal(sectionRef, '.reveal-heading')
     useModal(Boolean(selected), () => setSelected(null))
 
+    const scollImages = [
+        {
+            id: 7,
+            title: 'SiJadwal',
+            description: 'Teacher schedule information system with conflict detection and print export.',
+            tech: ['Laravel', 'React', 'Tailwind'],
+            github: 'https://github.com/LAWAGGG/sistem_informasi_jadwal',
+            demo: 'https://sistem-informasi-jadwal.vercel.app/',
+            image: '/images/projects/sistemjadwal.png',
+            featured: false,
+        },
+        {
+            id: 2,
+            title: 'SkillPath',
+            description: 'Education platform with Gemini AI integration for personalized learning paths.',
+            tech: ['React', 'Tailwind', 'Laravel'],
+            github: 'https://github.com/LAWAGGG/SkillPath',
+            demo: null,
+            image: '/images/projects/skillpath.png',
+            featured: true,
+        },
+
+        {
+            id: 4,
+            title: 'TenAspiration',
+            description: 'Student aspiration platform — submit and track school-wide ideas and feedback.',
+            tech: ['Laravel', 'Tailwind', 'Alpine'],
+            github: 'https://github.com/LAWAGGG/TenAspiration',
+            demo: 'https://tenaspiration.site',
+            image: '/images/projects/Aspiration.png',
+            featured: true,
+        },
+        {
+            id: 5,
+            title: 'Schopedia',
+            description: 'School marketplace connecting students, teachers, and vendors in one platform.',
+            tech: ['Laravel', 'React', 'Tailwind'],
+            github: 'https://github.com/LAWAGGG/Schopedia',
+            demo: null,
+            image: '/images/projects/schopedia.png',
+            featured: true,
+        },
+        {
+            id: 6,
+            title: 'DanTen',
+            description: 'OSIS Danusan marketplace for managing and selling school organization products.',
+            tech: ['React', 'Tailwind'],
+            github: 'https://github.com/LAWAGGG/DanTen',
+            demo: 'https://dan-ten-osis.vercel.app/',
+            image: '/images/projects/danten.png',
+            featured: false,
+        },
+
+
+        {
+            id: 1,
+            title: 'CommandSPES',
+            description: 'Class website portfolio with dynamic content management and responsive design.',
+            tech: ['React', 'CSS'],
+            github: 'https://github.com/LAWAGGG/CommandSPES-V2',
+            demo: 'https://commandspes58.vercel.app/',
+            image: '/images/projects/SPES.png',
+            featured: false,
+        },
+
+        {
+            id: 3,
+            title: 'FormKraft',
+            description: 'Dynamic form management system with drag-and-drop builder and validation.',
+            tech: ['Laravel', 'React'],
+            github: 'https://github.com/LAWAGGG/FormKraft',
+            demo: null,
+            image: '/images/projects/formKraft.png',
+            featured: false,
+        },
+    ]
+
     return (
-        <section id="projects" ref={sectionRef} className="relative py-24 md:py-32 overflow-hidden">
+        <section id="projects" ref={sectionRef} className="relative py-24 md:py-32 overflow-clip">
             <BackgroundPattern variant="grid" opacity={0.04} />
             <div className="rule" />
             <div className="absolute -top-6 -right-4 section-index select-none text-right pointer-events-none">
                 02
+            </div>
+
+            {/* Zoom parallax showcase — full-bleed sebelum grid */}
+            <div className="relative my-24 md:my-32">
+                <ZoomParallax images={scollImages.map(p => ({ src: p.image, alt: p.title }))} />
             </div>
 
             <div className="max-w-7xl mx-auto px-6 md:px-10 pt-14 relative">
@@ -45,7 +128,9 @@ export default function Projects() {
                         {projects.length} projects
                     </p>
                 </div>
+            </div>
 
+            <div className="max-w-7xl mx-auto px-6 md:px-10 pt-14">
                 {/* Uniform grid */}
                 <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
                     {projects.map((p, i) => (
