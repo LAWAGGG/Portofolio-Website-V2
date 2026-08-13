@@ -86,13 +86,13 @@ export default function Projects() {
         },
 
         {
-            id: 3,
-            title: 'FormKraft',
-            description: 'Dynamic form management system with drag-and-drop builder and validation.',
-            tech: ['Laravel', 'React'],
-            github: 'https://github.com/LAWAGGG/FormKraft',
-            demo: null,
-            image: '/images/projects/formKraft.png',
+            id: 8,
+            title: 'Plant Vs Zombie',
+            description: 'Plant Vs Zombie minigame',
+            tech: ['HTML', 'CSS', 'Javascript'],
+            github: 'https://github.com/LAWAGGG/Plant-Vs-Zombie',
+            demo: 'https://lawaggg.github.io/Plant-Vs-Zombie/',
+            image: '/images/projects/pvz.png',
             featured: false,
         },
     ]
