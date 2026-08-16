@@ -1,7 +1,7 @@
 export const experience = [
     {
-        company: 'Majelis Perwakilan Kelas — Badan Aspirasi',
-        role: 'Member',
+        company: 'Majelis Perwakilan Kelas',
+        role: 'Badan Aspirasi',
         period: 'Sep 2025 — Sep 2026',
         current: false,
         points: [
@@ -20,7 +20,7 @@ export const experience = [
         ],
     },
     {
-        company: 'PT TenizenCode Indonesia',
+        company: 'TenizenCode Indonesia',
         role: 'Fullstack Web Developer',
         period: 'Jul 2025 — Jun 2026',
         current: false,

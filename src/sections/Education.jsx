@@ -78,7 +78,7 @@ export default function Education() {
                                 }`} />
 
                             <div className="grid grid-cols-1 sm:grid-cols-4 gap-1 sm:gap-6 items-baseline">
-                                <p className="font-mono text-[10px] text-muted tracking-wider sm:text-right pt-0.5">
+                                <p className="font-mono text-[10px] text-dim tracking-wider sm:text-right pt-0.5">
                                     {e.period}
                                 </p>
                                 <div className="sm:col-span-3">

@@ -14,7 +14,7 @@ export default function Footer() {
                     <div className="flex items-center gap-3">
                         <span className="font-display font-bold text-accent">AF</span>
                         <span className="text-border">|</span>
-                        <span className="font-mono text-[10px] text-muted tracking-wider">
+                        <span className="font-mono text-[10px] text-dim tracking-wider">
                             Ahmad Faqih Arrifa'i © {new Date().getFullYear()}
                         </span>
                     </div>
@@ -27,7 +27,7 @@ export default function Footer() {
                                 target={s.label !== 'Email' ? '_blank' : undefined}
                                 rel="noreferrer"
                                 aria-label={s.label}
-                                className="flex items-center gap-2 px-4 py-2 border border-border hover:border-accent/40 text-muted hover:text-fg transition-colors duration-200"
+                                className="flex items-center gap-2 px-4 py-2 border border-border hover:border-accent/40 text-dim hover:text-fg transition-colors duration-200"
                             >
                                 {s.icon}
                             </a>

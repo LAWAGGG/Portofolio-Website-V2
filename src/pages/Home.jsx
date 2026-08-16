@@ -21,7 +21,7 @@ function AboutPreview() {
     useFadeUp(ref, '.fade-up', 0.12)
     return (
         <section ref={ref} className="relative py-16 md:py-24 overflow-hidden">
-            <BackgroundPattern variant="dots" opacity={0.05} />
+            <BackgroundPattern variant="dots" opacity={0.12} />
             <div className="rule" />
             <div className="max-w-7xl mx-auto px-6 md:px-10 pt-12">
                 <p className="fade-up font-mono text-[11px] tracking-[0.22em] text-accent uppercase mb-8">Who I am</p>
@@ -56,7 +56,7 @@ function FeaturedPreview() {
     useFadeUp(ref, '.fade-up', 0.1)
     return (
         <section ref={ref} className="relative py-16 md:py-24 overflow-hidden">
-            <BackgroundPattern variant="gridSm" opacity={0.04} />
+            <BackgroundPattern variant="gridSm" opacity={0.08} />
             <div className="rule" />
             <div className="max-w-7xl mx-auto px-6 md:px-10 pt-12">
                 <div className="flex flex-wrap items-end justify-between gap-6 mb-12">
@@ -67,7 +67,7 @@ function FeaturedPreview() {
                             Featured projects.
                         </h2>
                     </div>
-                    <span className="fade-up font-mono text-[10px] text-muted tracking-widest uppercase">
+                    <span className="fade-up font-mono text-[10px] text-dim tracking-widest uppercase">
                         {String(featured.length).padStart(2, '0')} / 07 featured
                     </span>
                 </div>
@@ -96,7 +96,7 @@ function AchievementPreview() {
     useFadeUp(ref, '.fade-up', 0.1)
     return (
         <section ref={ref} className="relative py-16 md:py-24 overflow-hidden">
-            <BackgroundPattern variant="dots" opacity={0.05} />
+            <BackgroundPattern variant="dots" opacity={0.12} />
             <div className="rule" />
             <div className="max-w-7xl mx-auto px-6 md:px-10 pt-12">
                 <p className="fade-up font-mono text-[11px] tracking-[0.22em] text-accent uppercase mb-4">Competition Record</p>
@@ -114,7 +114,7 @@ function AchievementPreview() {
                             </span>
                             <div>
                                 <h3 className="font-display font-semibold text-base text-fg tracking-tight mb-1">{a.title}</h3>
-                                <p className="font-mono text-[11px] tracking-wider text-muted uppercase">{a.level}</p>
+                                <p className="font-mono text-[11px] tracking-wider text-dim uppercase">{a.level}</p>
                             </div>
                         </div>
                     ))}

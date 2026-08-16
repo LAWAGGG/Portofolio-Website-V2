@@ -23,7 +23,7 @@ export default function AchievementsList() {
 
     return (
         <section ref={ref} className="relative py-24 md:py-32 overflow-hidden">
-            <BackgroundPattern variant="grid" opacity={0.04} />
+            <BackgroundPattern variant="grid" opacity={0.08} />
             <div className="rule" />
 
             <div className="max-w-7xl mx-auto px-6 md:px-10 pt-14">
@@ -37,7 +37,7 @@ export default function AchievementsList() {
                             Competition record.
                         </h2>
                     </div>
-                    <span className="font-mono text-[10px] text-muted tracking-widest uppercase">
+                    <span className="font-mono text-[10px] text-dim tracking-widest uppercase">
                         {sorted.length} results
                     </span>
                 </div>
@@ -69,11 +69,11 @@ export default function AchievementsList() {
                                 <p className="font-mono text-[10px] tracking-wider text-dim uppercase">
                                     {a.level} · {a.year}
                                 </p>
-                                <p className="font-body text-sm text-muted leading-relaxed mt-1.5">
+                                <p className="font-body text-sm text-dim leading-relaxed mt-1.5">
                                     {a.description}
                                 </p>
                             </div>
-                            <Trophy size={14} className="text-muted/40 flex-shrink-0 mt-1" />
+                            <Trophy size={14} className="text-dim/40 flex-shrink-0 mt-1" />
                         </motion.div>
                     ))}
                 </div>

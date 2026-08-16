@@ -17,7 +17,7 @@ const gridMask = {
     maskImage: 'linear-gradient(to bottom, #000 0%, transparent 92%)',
 }
 
-export function BackgroundPattern({ variant = 'grid', opacity = 0.05, className = '' }) {
+export function BackgroundPattern({ variant = 'grid', opacity = 0.08, className = '' }) {
     const cls = `pointer-events-none absolute inset-0 select-none overflow-hidden ${className}`
 
     if (variant === 'dots') {
@@ -26,7 +26,7 @@ export function BackgroundPattern({ variant = 'grid', opacity = 0.05, className 
                 className={cls}
                 aria-hidden="true"
                 style={{
-                    backgroundImage: `radial-gradient(${ACCENT} 1px, transparent 1px)`,
+                    backgroundImage: `radial-gradient(${ACCENT} 1.5px, transparent 1.5px)`,
                     backgroundSize: '26px 26px',
                     opacity,
                 }}
@@ -62,8 +62,8 @@ export function BackgroundPattern({ variant = 'grid', opacity = 0.05, className 
         <svg className={cls} aria-hidden="true" viewBox="0 0 960 600" preserveAspectRatio="xMidYMid slice" style={{ opacity }}>
             {segments.map((s, i) => (
                 <g key={i}>
-                    <path d={s.d} fill="none" stroke={ACCENT} strokeWidth="1" vectorEffect="non-scaling-stroke" />
-                    <circle cx={s.node.x} cy={s.node.y} r={3} fill={ACCENT} />
+                    <path d={s.d} fill="none" stroke={ACCENT} strokeWidth="1.5" vectorEffect="non-scaling-stroke" />
+                    <circle cx={s.node.x} cy={s.node.y} r={3.5} fill={ACCENT} />
                 </g>
             ))}
             <circle cx={920} cy={40} r={3} fill={FG} />

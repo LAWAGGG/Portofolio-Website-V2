@@ -1,8 +1,9 @@
 import { useRef } from 'react'
 import { motion } from 'framer-motion'
-import { SiHtml5, SiCss, SiJavascript, SiReact, SiLaravel, SiFastapi, SiMysql, SiPostgresql, SiGit, SiGithub, SiPostman } from 'react-icons/si'
+import { SiHtml5, SiCss, SiJavascript, SiReact, SiLaravel, SiFastapi, SiMysql, SiPostgresql, SiGit, SiGithub, SiPostman, SiOpencode, SiPhp, SiUbuntu } from 'react-icons/si'
 import { BackgroundPattern } from '../components/BackgroundPattern'
 import { useMaskReveal } from '../hooks/useScrollReveal'
+import { VscVscode } from 'react-icons/vsc'
 
 const tEase = [0.16, 1, 0.3, 1]
 
@@ -13,6 +14,7 @@ const groups = [
             { name: 'HTML5', icon: SiHtml5 },
             { name: 'CSS3', icon: SiCss },
             { name: 'JavaScript', icon: SiJavascript },
+            { name: 'PHP', icon: SiPhp },
         ],
     },
     {
@@ -35,7 +37,10 @@ const groups = [
         items: [
             { name: 'Git', icon: SiGit },
             { name: 'GitHub', icon: SiGithub },
-            { name: 'Postman', icon: SiPostman },
+            { name: 'VS Code', icon: VscVscode, },
+            { name: 'Postman', icon: SiPostman, },
+            { name: 'Opencode', icon: SiOpencode, },
+            { name: 'WSL', icon: SiUbuntu, },
         ],
     },
 ]
@@ -53,7 +58,7 @@ export default function TechStack() {
 
     return (
         <section ref={ref} className="relative py-20 md:py-28 overflow-hidden">
-            <BackgroundPattern variant="gridSm" opacity={0.04} />
+            <BackgroundPattern variant="gridSm" opacity={0.08} />
             <div className="rule" />
 
             <div className="max-w-7xl mx-auto px-6 md:px-10 pt-12">
@@ -67,8 +72,8 @@ export default function TechStack() {
                             Tools I work with.
                         </h2>
                     </div>
-                    <span className="font-mono text-[10px] text-muted tracking-widest uppercase">
-                        11 technologies
+                    <span className="font-mono text-[10px] text-dim tracking-widest uppercase">
+                        {groups.flatMap(g=>g.items).length} technologies
                     </span>
                 </div>
 
@@ -81,7 +86,7 @@ export default function TechStack() {
                             viewport={{ once: true, margin: '-40px' }}
                             transition={{ duration: 0.5, ease: tEase, delay: gi * 0.07 }}
                         >
-                            <p className="font-mono text-[9px] tracking-[0.2em] text-muted uppercase pb-3 border-b border-border mb-4">
+                            <p className="font-mono text-[9px] tracking-[0.2em] text-dim uppercase pb-3 border-b border-border mb-4">
                                 {group.name}
                             </p>
                             <div className="flex flex-wrap gap-2">
@@ -92,7 +97,7 @@ export default function TechStack() {
                                             key={item.name}
                                             className="flex items-center gap-2 border border-border px-3 py-2 hover:border-accent/50 hover:bg-accent/5 transition-colors duration-200"
                                         >
-                                            <Icon size={15} className="text-muted" />
+                                            <Icon size={15} className="text-dim" />
                                             <span className="font-display font-medium text-sm text-fg">{item.name}</span>
                                         </div>
                                     )
@@ -104,7 +109,7 @@ export default function TechStack() {
 
                 {/* Soft skills */}
                 <div className="mt-16 pt-8 border-t border-border">
-                    <p className="font-mono text-[9px] tracking-[0.2em] text-muted uppercase mb-4">
+                    <p className="font-mono text-[9px] tracking-[0.2em] text-dim uppercase mb-4">
                         Soft skills
                     </p>
                     <div className="flex flex-wrap gap-2">

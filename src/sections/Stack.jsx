@@ -1,8 +1,9 @@
 import { useRef } from 'react'
 import { motion } from 'framer-motion'
-import { SiHtml5, SiCss, SiJavascript, SiReact, SiTailwindcss, SiPhp, SiLaravel, SiMysql, SiGit, SiFigma, SiGithub, SiPostman, SiPostgresql, SiFastapi } from 'react-icons/si'
+import { SiHtml5, SiCss, SiJavascript, SiReact, SiTailwindcss, SiPhp, SiLaravel, SiMysql, SiGit, SiFigma, SiGithub, SiPostman, SiPostgresql, SiFastapi, SiOpencode, SiUbuntu } from 'react-icons/si'
 import { BackgroundPattern } from '../components/BackgroundPattern'
 import { ContainerScroll } from '../components/ContainerScroll'
+import { VscCode, VscCodeOss, VscVscode } from 'react-icons/vsc'
 
 /*
  * TECH STACK — Blueprint architecture diagram, revealed inside a scroll card.
@@ -19,11 +20,11 @@ const layers = [
         name: 'Frontend',
         role: 'User interface',
         items: [
-            { name: 'HTML', icon: SiHtml5,  },
-            { name: 'CSS', icon: SiCss,  },
-            { name: 'JavaScript', icon: SiJavascript,  },
-            { name: 'React', icon: SiReact,  },
-            { name: 'Tailwind', icon: SiTailwindcss,  },
+            { name: 'HTML', icon: SiHtml5, },
+            { name: 'CSS', icon: SiCss, },
+            { name: 'JavaScript', icon: SiJavascript, },
+            { name: 'React', icon: SiReact, },
+            { name: 'Tailwind', icon: SiTailwindcss, },
         ],
     },
     {
@@ -31,8 +32,8 @@ const layers = [
         name: 'Backend',
         role: 'Server & APIs',
         items: [
-            { name: 'PHP', icon: SiPhp,  },
-            { name: 'Laravel', icon: SiLaravel,  },
+            { name: 'PHP', icon: SiPhp, },
+            { name: 'Laravel', icon: SiLaravel, },
             { name: 'FastAPI', icon: SiFastapi, },
         ],
     },
@@ -50,10 +51,13 @@ const layers = [
         name: 'Tools',
         role: 'Workflow',
         items: [
-            { name: 'Git', icon: SiGit,  },
+            { name: 'Git', icon: SiGit, },
             { name: 'Github', icon: SiGithub, },
-            { name: 'Figma', icon: SiFigma,  },
-            { name: 'Postman', icon: SiPostman,  },
+            { name: 'Figma', icon: SiFigma, },
+            { name: 'VS Code', icon: VscVscode, },
+            { name: 'Postman', icon: SiPostman, },
+            { name: 'Opencode', icon: SiOpencode, },
+            { name: 'WSL', icon: SiUbuntu, },
         ],
     },
 ]
@@ -102,7 +106,7 @@ function StackDiagram() {
                                         {layer.name}
                                     </h3>
                                 </div>
-                                <span className="font-mono text-[9px] tracking-widest text-muted uppercase">
+                                <span className="font-mono text-[9px] tracking-widest text-dim uppercase">
                                     {layer.role}
                                 </span>
                             </div>
@@ -119,9 +123,9 @@ function StackDiagram() {
                                             viewport={{ once: true, margin: '-40px' }}
                                             transition={{ duration: 0.4, ease: tEase, delay: li * 0.05 + 0.08 }}
                                         >
-                                            <Icon size={15} className="text-muted group-hover/item:text-accent transition-colors" />
+                                            <Icon size={15} className="text-dim group-hover/item:text-accent transition-colors" />
                                             <span className="font-display font-semibold text-sm text-fg">{item.name}</span>
-                                            <span className="hidden md:inline font-mono text-[9px] text-muted uppercase">{item.note}</span>
+                                            <span className="hidden md:inline font-mono text-[9px] text-dim uppercase">{item.note}</span>
                                         </motion.div>
                                     )
                                 })}
@@ -142,7 +146,7 @@ export default function Stack() {
 
     return (
         <section ref={sectionRef} className="relative py-24 md:py-32">
-            <BackgroundPattern variant="circuit" opacity={0.05} />
+            <BackgroundPattern variant="circuit" opacity={0.1} />
             <div className="rule" />
 
             <div className="max-w-7xl mx-auto px-6 md:px-10 pt-12 relative">

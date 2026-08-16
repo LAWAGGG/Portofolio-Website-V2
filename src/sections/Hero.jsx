@@ -96,25 +96,13 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-[#0d1117]/70" />
             </div>
 
-            {/* BG layer — grid, moves slowest */}
-            <motion.div
-                ref={layerBgRef}
-                className="grid-lines absolute inset-0"
-                style={{ x: bgMoveX, y: bgMoveY }}
-            />
+           
 
             {/* Section index — back layer */}
             <div className="absolute bottom-0 right-0 section-index leading-none pr-2 select-none">00</div>
 
             {/* Main content */}
             <div className="hero-content max-w-7xl mx-auto px-6 md:px-10 w-full relative z-10">
-                {/* Eyebrow */}
-                <div className="hero-eyebrow flex items-center gap-3 mb-7">
-                    <span className="inline-block w-5 h-px bg-accent" />
-                    <span className="font-mono text-[11px] tracking-[0.22em] text-accent uppercase">
-                        Fullstack Developer
-                    </span>
-                </div>
 
                 {/* Name — each line has overflow:hidden for mask effect */}
                 <h1 className="font-display font-bold leading-[0.92] tracking-tightest mb-7"
@@ -150,7 +138,7 @@ export default function Hero() {
                     ].map(s => (
                         <div key={s.label}>
                             <p className="font-display font-bold text-2xl md:text-3xl text-fg tracking-tight">{s.n}</p>
-                            <p className="font-mono text-[9px] tracking-widest text-muted uppercase mt-1">{s.label}</p>
+                            <p className="font-mono text-[9px] tracking-widest text-dim uppercase mt-1">{s.label}</p>
                         </div>
                     ))}
                 </div> */}

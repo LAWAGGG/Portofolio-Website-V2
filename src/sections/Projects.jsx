@@ -99,7 +99,7 @@ export default function Projects() {
 
     return (
         <section id="projects" ref={sectionRef} className="relative py-24 md:py-32 overflow-clip">
-            <BackgroundPattern variant="grid" opacity={0.04} />
+            <BackgroundPattern variant="grid" opacity={0.08} />
             <div className="rule" />
             <div className="absolute -top-6 -right-4 section-index select-none text-right pointer-events-none">
                 02
@@ -124,7 +124,7 @@ export default function Projects() {
                             Things I've built.
                         </h2>
                     </div>
-                    <p className="font-mono text-[10px] text-muted tracking-widest uppercase">
+                    <p className="font-mono text-[10px] text-dim tracking-widest uppercase">
                         {projects.length} projects
                     </p>
                 </div>
@@ -190,7 +190,7 @@ export default function Projects() {
                                 onClick={() => setSelected(null)}
                                 aria-label="Close"
                                 autoFocus
-                                className="absolute top-3 right-3 z-10 min-w-[44px] min-h-[44px] flex items-center justify-center bg-bg/70 border border-border text-muted hover:text-fg transition-colors"
+                                className="absolute top-3 right-3 z-10 min-w-[44px] min-h-[44px] flex items-center justify-center bg-bg/70 border border-border text-dim hover:text-fg transition-colors"
                                 data-cursor-label="CLOSE"
                             >
                                 <X size={14} />
@@ -204,7 +204,7 @@ export default function Projects() {
                             />
 
                             <div className="p-6 sm:p-8">
-                                <p className="font-mono text-[10px] tracking-widest text-muted uppercase mb-2">
+                                <p className="font-mono text-[10px] tracking-widest text-dim uppercase mb-2">
                                     {selected.tech.join(' / ')}
                                 </p>
                                 <h3 className="font-display font-bold tracking-tighter text-fg mb-3"

@@ -8,8 +8,7 @@ export const achievements = [
         category: 'Web Technology',
         description: 'Competed against top vocational students across Indonesia.',
         highlight: true,
-        // TODO: replace with actual certificate image file for each achievement
-        certificate: '/images/achievements/placeholder.svg',
+        certificate: '/images/achievements/national.png',
     },
     {
         id: 2,
@@ -20,7 +19,6 @@ export const achievements = [
         category: 'Web Technology',
         description: 'First place among all Jakarta vocational schools.',
         highlight: true,
-        // TODO: replace with actual certificate image file
         certificate: '/images/achievements/province.png',
     },
     {
@@ -32,7 +30,6 @@ export const achievements = [
         category: 'Web Technology',
         description: 'Regional qualifier winner, advancing to provincial stage.',
         highlight: false,
-        // TODO: replace with actual certificate image file
         certificate: '/images/achievements/district.png',
     },
     {
@@ -44,7 +41,6 @@ export const achievements = [
         category: 'Web Technology',
         description: 'Provincial robotics competition with advanced programming strategies.',
         highlight: false,
-        // TODO: replace with actual certificate image file
         certificate: '/images/achievements/robotic.jpeg',
     },
     {
@@ -56,7 +52,6 @@ export const achievements = [
         category: 'Non-Tech',
         description: 'First place in district-level Quran memorization competition.',
         highlight: false,
-        // TODO: replace with actual certificate image file
         certificate: '/images/achievements/placeholder.svg',
     },
     {
@@ -68,7 +63,6 @@ export const achievements = [
         category: 'Non-Tech',
         description: 'Represented district at city-wide competition.',
         highlight: false,
-        // TODO: replace with actual certificate image file
         certificate: '/images/achievements/placeholder.svg',
     },
 ]

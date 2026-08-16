@@ -45,7 +45,7 @@ export default function Achievements() {
 
     return (
         <section id="achievements" ref={sectionRef} className="relative py-24 md:py-32 overflow-hidden">
-            <BackgroundPattern variant="grid" opacity={0.05} />
+            <BackgroundPattern variant="grid" opacity={0.08} />
             <div className="rule" />
             <div className="absolute -top-6 -left-4 section-index select-none">03</div>
 
@@ -87,7 +87,7 @@ export default function Achievements() {
                                     >
                                         {year}
                                     </span>
-                                    <span className="font-mono text-[10px] text-muted tracking-widest uppercase">
+                                    <span className="font-mono text-[10px] text-dim tracking-widest uppercase">
                                         {list.length} result{list.length > 1 ? 's' : ''}
                                     </span>
                                 </div>
@@ -127,7 +127,7 @@ export default function Achievements() {
                                             </div>
                                             <ArrowUpRight
                                                 size={14}
-                                                className="text-muted/60 group-hover:text-accent transition-colors flex-shrink-0"
+                                                className="text-dim/60 group-hover:text-accent transition-colors flex-shrink-0"
                                             />
                                         </motion.button>
                                     ))}
@@ -172,7 +172,7 @@ export default function Achievements() {
                                 onClick={() => setSelected(null)}
                                 aria-label="Close"
                                 autoFocus
-                                className="absolute top-3 right-3 z-10 min-w-[44px] min-h-[44px] flex items-center justify-center bg-bg/70 border border-border text-muted hover:text-fg transition-colors"
+                                className="absolute top-3 right-3 z-10 min-w-[44px] min-h-[44px] flex items-center justify-center bg-bg/70 border border-border text-dim hover:text-fg transition-colors"
                                 data-cursor-label="CLOSE"
                             >
                                 <X size={14} />

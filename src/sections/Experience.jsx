@@ -80,7 +80,7 @@ export default function Experience() {
                                 }`} />
 
                             <div className="grid grid-cols-1 sm:grid-cols-4 gap-1 sm:gap-6 items-baseline">
-                                <p className="font-mono text-[10px] text-muted tracking-wider sm:text-right pt-0.5">
+                                <p className="font-mono text-[10px] text-dim tracking-wider sm:text-right pt-0.5">
                                     {e.period}
                                 </p>
                                 <div className="sm:col-span-3">
@@ -92,7 +92,7 @@ export default function Experience() {
                                     </p>
                                     <ul className="mt-3 space-y-2">
                                         {e.points.map((p, pi) => (
-                                            <li key={pi} className="font-body text-sm text-muted leading-relaxed flex gap-2">
+                                            <li key={pi} className="font-body text-sm text-dim leading-relaxed flex gap-2">
                                                 <span className="text-accent flex-shrink-0 mt-0.5">—</span>
                                                 {p}
                                             </li>

@@ -78,7 +78,7 @@ export default function Navbar() {
                             key={l.to}
                             to={l.to}
                             end={l.end}
-                            className={`relative font-mono text-[11px] tracking-widest uppercase px-4 py-2 transition-colors duration-200 ${isActive(l.to) ? 'text-fg' : 'text-muted hover:text-fg'
+                            className={`relative font-mono text-[11px] tracking-widest uppercase px-4 py-2 transition-colors duration-200 ${isActive(l.to) ? 'text-fg' : 'text-dim hover:text-fg'
                                 }`}
                         >
                             {isActive(l.to) && (
@@ -122,7 +122,7 @@ export default function Navbar() {
                             {links.map(l => (
                                 <NavLink key={l.to} to={l.to} end={l.end}
                                     onClick={() => setMenuOpen(false)}
-className={`font-mono text-xs tracking-widest uppercase py-2.5 px-3 border-b border-border/50 last:border-0 transition-colors ${isActive(l.to) ? 'text-accent bg-surface/40' : 'text-muted hover:text-fg'
+className={`font-mono text-xs tracking-widest uppercase py-2.5 px-3 border-b border-border/50 last:border-0 transition-colors ${isActive(l.to) ? 'text-accent bg-surface/40' : 'text-dim hover:text-fg'
                                     }`}>
                                     {l.label}
                                 </NavLink>

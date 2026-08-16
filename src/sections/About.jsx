@@ -16,7 +16,7 @@ export default function About() {
 
     return (
         <section id="about" ref={sectionRef} className="relative py-24 md:py-32 overflow-hidden">
-            <BackgroundPattern variant="dots" opacity={0.05} />
+            <BackgroundPattern variant="dots" opacity={0.12} />
             <div className="rule" />
             <div className="absolute -top-6 -left-4 section-index select-none">01</div>
 
@@ -89,7 +89,7 @@ export default function About() {
                         transition={{ duration: 0.6, ease: tEase, delay: 0.16 }}
                     >
                         <div className="border border-border bg-surface/25 p-5 space-y-4">
-                            <p className="font-mono text-[9px] tracking-[0.2em] text-muted uppercase pb-3 border-b border-border">
+                            <p className="font-mono text-[9px] tracking-[0.2em] text-dim uppercase pb-3 border-b border-border">
                                 — Profile
                             </p>
                             {[
@@ -100,7 +100,7 @@ export default function About() {
                                 <div key={item.label} className="flex items-start gap-3">
                                     <span className="text-accent mt-0.5 flex-shrink-0">{item.icon}</span>
                                     <div>
-                                        <p className="font-mono text-[9px] tracking-widest text-muted uppercase mb-0.5">{item.label}</p>
+                                        <p className="font-mono text-[9px] tracking-widest text-dim uppercase mb-0.5">{item.label}</p>
                                         {item.href ? (
                                             <a href={item.href} target={item.href.startsWith('http') ? '_blank' : undefined} rel="noreferrer"
                                                 className="font-body text-sm text-fg hover:text-accent transition-colors link-underline break-all">
