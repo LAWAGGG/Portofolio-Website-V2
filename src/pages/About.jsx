@@ -7,7 +7,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function AboutPage() {
     usePageMeta(
-        'About — Ahmad Faqih Arrifa\'i',
+        'Ahmad Faqih Ar Rifa\'i',
         'About Ahmad Faqih Arrifa\'i — fullstack web developer from Jakarta, Indonesia, interested in front-end, back-end, and database management.'
     )
     return (

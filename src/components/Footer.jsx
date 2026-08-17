@@ -15,7 +15,7 @@ export default function Footer() {
                         <span className="font-display font-bold text-accent">AF</span>
                         <span className="text-border">|</span>
                         <span className="font-mono text-[10px] text-dim tracking-wider">
-                            Ahmad Faqih Arrifa'i © {new Date().getFullYear()}
+                            Ahmad Faqih Ar Rifa'i © {new Date().getFullYear()}
                         </span>
                     </div>
 

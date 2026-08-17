@@ -158,7 +158,7 @@ function ClosingCTA() {
 
 export default function Home() {
     usePageMeta(
-        'Home — Ahmad Faqih Arrifa\'i',
+        'Ahmad Faqih Ar Rifa\'i',
         'Portfolio of Ahmad Faqih Arrifa\'i — 17-year-old fullstack web developer from Indonesia. LKS Web Technology National 2nd place 2026.'
     )
     return (

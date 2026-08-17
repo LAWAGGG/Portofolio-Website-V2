@@ -108,7 +108,7 @@ export default function Hero() {
                 <h1 className="font-display font-bold leading-[0.92] tracking-tightest mb-7"
                     style={{ fontSize: 'clamp(3rem, 9.5vw, 8.5rem)' }}>
                     <span className="hero-line1 block overflow-hidden text-fg/90">Ahmad Faqih</span>
-                    <span className="hero-line2 block overflow-hidden text-accent">Arrifa'i</span>
+                    <span className="hero-line2 block overflow-hidden text-accent">Ar Rifa'i</span>
                 </h1>
 
                 {/* Sub */}

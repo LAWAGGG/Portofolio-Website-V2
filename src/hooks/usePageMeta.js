@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-const SITE = 'Ahmad Faqih Arrifa\'i'
+const SITE = 'Ahmad Faqih Ar Rifa\'i'
 
 /** Sets per-page <title> and meta description. */
 export function usePageMeta(title, description) {
