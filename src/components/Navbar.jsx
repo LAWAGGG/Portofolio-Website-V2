@@ -68,7 +68,8 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6 md:px-10 h-14 flex items-center justify-between">
                 {/* Logo */}
                 <Link to="/" className="font-display font-bold text-lg tracking-tightest group">
-                    <span className="text-accent group-hover:opacity-80 transition-opacity">AF</span>
+                    {/* <span className="text-accent group-hover:opacity-80 transition-opacity">AF</span> */}
+                    <img src="/images/logo.png" className='w-10 h-50' alt="" />
                 </Link>
 
                 {/* Desktop nav */}
