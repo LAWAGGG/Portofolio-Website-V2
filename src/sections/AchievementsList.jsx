@@ -42,7 +42,7 @@ export default function AchievementsList() {
                     </span>
                 </div>
 
-                <div className="max-w-3xl border border-border divide-y divide-border bg-surface/10">
+                <div className="max-w-3xl border border-border divide-y divide-border bg-surface">
                     {sorted.map((a, i) => (
                         <motion.div
                             key={a.id}

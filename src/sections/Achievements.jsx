@@ -93,7 +93,7 @@ export default function Achievements() {
                                 </div>
 
                                 {/* Result rows — clickable */}
-                                <div className="border border-border divide-y divide-border bg-surface/10">
+                                <div className="border border-border divide-y divide-border bg-surface">
                                     {list.map((a, i) => (
                                         <motion.button
                                             key={a.id}

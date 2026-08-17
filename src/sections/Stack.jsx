@@ -93,7 +93,7 @@ function StackDiagram() {
                     <div key={layer.name} className="relative">
                         {/* Layer panel */}
                         <motion.div
-                            className="border border-border bg-surface/25 p-6 md:p-8"
+                            className="border border-border bg-surface p-6 md:p-8"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: '-40px' }}

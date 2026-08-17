@@ -99,7 +99,6 @@ export default function Projects() {
 
     return (
         <section id="projects" ref={sectionRef} className="relative py-24 md:py-32 overflow-clip">
-            <BackgroundPattern variant="grid" opacity={0.08} />
             <div className="rule" />
             <div className="absolute -top-6 -right-4 section-index select-none text-right pointer-events-none">
                 02

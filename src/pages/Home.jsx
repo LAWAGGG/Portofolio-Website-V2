@@ -107,7 +107,7 @@ function AchievementPreview() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 border border-border divide-y sm:divide-y-0 sm:divide-x divide-border">
                     {topStats.map((a, i) => (
-                        <div key={i} className="fade-up p-7 flex flex-col justify-between gap-6 hover:bg-surface/25 transition-colors duration-200">
+                        <div key={i} className="fade-up p-7 flex flex-col justify-between gap-6 bg-surface hover:bg-fg/[0.04] transition-colors duration-200">
                             <span className="font-display font-bold leading-none text-fg"
                                 style={{ fontSize: 'clamp(3rem, 6vw, 4.5rem)', letterSpacing: '-0.04em' }}>
                                 <span className="text-accent">#{a.rank}</span>
