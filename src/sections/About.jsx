@@ -39,7 +39,7 @@ export default function About() {
                     >
                         <div className="relative overflow-hidden border border-border max-w-[260px] mx-auto lg:mx-0" style={{ aspectRatio: '3/4' }}>
                             <img
-                                src="/images/gweh.jpg"
+                                src="/images/gweh.jpeg"
                                 alt="Ahmad Faqih Ar Rifa'i"
                                 className="w-full h-full object-cover object-top"
                                 style={{ filter: 'grayscale(20%) brightness(0.92)' }}
