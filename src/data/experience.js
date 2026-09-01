@@ -10,7 +10,7 @@ export const experience = [
         ],
     },
     {
-        company: 'SMK Negeri 10 Jakarta',
+        company: 'Web Technologies SMKN 10',
         role: 'LKS Web Technologies Training Participant',
         period: 'Oct 2025 — Jul 2026',
         current: false,
